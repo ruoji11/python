@@ -6,24 +6,20 @@ while True:
     # 功能清单
     card_manage.show_menu()
 
-
     action_str = input("请输入您想选择的操作：")
-
 
     # 1,2,3操作
     if action_str in ["1","2","3"]:
         print("您选择的操作是[%s]" % action_str)
         # 功能1:显示全部
         if action_str == "1":
-            pass
+            card_manage.show_all()
         # 功能2:新增名片
         elif action_str == "2":
-            pass
+            card_manage.new_card()
         # 功能3：查询名片
         else:
-            pass
-
-        pass
+            card_manage.search_card()
 
     # 0操作，退出系统
     elif action_str == "0":
